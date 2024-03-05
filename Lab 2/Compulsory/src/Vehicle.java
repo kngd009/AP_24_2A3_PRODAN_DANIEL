@@ -29,9 +29,8 @@ public class Vehicle {
     public void setDepot(Depot depot) {
         this.depot = depot;
     }
-
     @Override
     public String toString() {
-        return "Vehicle { name ='" + name + "', depot =" + depot.getName() + "}";
+        return "Vehicle name: " + name + "', depot: " + depot.getName();
     }
 }

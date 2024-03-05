@@ -29,13 +29,12 @@ public class Depot {
 
     public void setVehicles(Vehicle... cars) {
         this.cars = cars;
-        for (Vehicle c : cars) {
-            c.setDepot(this);
+        for (Vehicle masina : cars) {
+            masina.setDepot(this);
         }
     }
-
-    @Override
+@Override
     public String toString() {
-        return "Depot { name ='" + name + "'}";
+        return "Depot name " + name;
     }
 }
